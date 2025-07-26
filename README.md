@@ -4,4 +4,4 @@
 - HTML, CSS 연습하기 위한 클론코딩
 - 배너만 Javascript로 진행
 
-- 현재 주소(2025.07.26 19:11) : file:///C:/Users/User/Desktop/%EC%9D%B4%EB%82%A8%ED%98%81/kdt/web/cloneCoding/workspace/html/clone.html
+- 수정해야할 부분(2025.07.26 19:11) : 전체적인 크기 수정, 헤더 부분 고정, 왼쪽 메뉴 고정, 각 이미지마다 a태그 달아서 마우스포인터 변화 만들어야함, p태그로 붙어있는 부분 a태그로 수정해야함 외 매우 많음
