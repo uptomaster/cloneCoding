@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OUTSTANDING</title>
   <link rel="stylesheet" href="./../css/clone.css">
+  <!-- 검색창 안에 돋보기 아이콘 넣기(스크립트) -->
 </head>
 
 <body>
@@ -20,19 +21,22 @@
           </a>
         </div>
         <div class="header--search-box">
-          <label for="search"></label>
-          <input style="width:90%" type="text" id="search" autofocus>
+          <input type="text" id="search" autofocus>
+          <i class="header--search-icon">
+            <img src="./../img/icon01.jpg">
+          </i>
         </div>
         <div class="header--info-box">
+          <img src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/solid/megaphone.svg" alt="공지사항">
           <p>≪요즘 그리 핫하다는 아웃스탠딩 단톡방을 소개합니다≫</p>
         </div>
       </section>
 
-      <div class="header--login-container" style="text-align: right;">
+      <div class="header--login-container">
         <div class="header--login-box">
           <a href="로그인">로그인</a>
         </div>
-        <div class="header--login-box">
+        <div class="header--login-box2">
           <a href="회원가입">회원가입</a>
         </div>
       </div>
@@ -46,7 +50,7 @@
   <main>
     <section class="side--bar-container">
       <nav>
-        <ul style="display:inline;">
+        <ul>
           <li><a href="">포스팅</a></li>
           <li><a href="">인기 포스팅</a></li>
           <li><a href="">스타트업DB</a></li>
@@ -64,7 +68,7 @@
         </div>
       </nav>
     </section>
-    <div class="section--container">
+    <div class="main--section-container">
       <section>
         <div class="main--info-container">
           <div class="main--info-title"> <!--앙트러 뭐시기-->
@@ -82,55 +86,72 @@
             </div>
           </div>
           <div class="main--info-banner">
-            <div class="info--banner01">쿠팡</div>
+            <div class="info--banner01">뉴스</div>
             <div class="info--banner02">
-              <a href="#" style="text-decoration: none; color: black;">'구독자 280만' 인기 크리에이터 ‘침착맨’ 굿즈 단독 론칭</a>
+              <a href="#">'구독자 280만' 인기 크리에이터 ‘침착맨’ 굿즈 단독 론칭</a>
             </div>
           </div>
-        </div>
+      </section>
 
       </section>
       <!-- 뉴스 메인 기사들(한줄에 4개씩 만들기) -->
       <article class="article--container01">
-        <a href="">
+        <div>
           <img class="article--news" src="./../img/article--news01.PNG">
+          <div class="news-title">막 오른 천하제일 AI대회, 키워드는 오픈소스-프롬스크래치</div>
+          <div class="news-contents">한국 제일 AI 선발대회, 'WBL(World Best LLM)' 프로젝트가 공식적으로 시작됐습니다. 한국을 대표하는 AI 기업 대부분이 도전장을
+            냈습니다...</div>
+        </div>
+
+        <div>
           <img class="article--news" src="./../img/article--news02.PNG">
+          <div class="news-title">“벤처 생태계, 고속도로는 깔아놨는데 진출로는 없는 상황”..김학균 VC협회장 인터뷰</div>
+          <div class="news-contents">"지금 우리나라 벤처 생태계를 비유를 들어 설명하자면 고속도로를 쫙 깔아놨는데 진입로는 많이 만들어놨지만 진출로는 없는 상황과 같아요"...
+          </div>
+        </div>
+
+        <div>
           <img class="article--news" src="./../img/article--news03.PNG">
-          <img class="article--news" src="./../img/article--news01.PNG">
-        </a>
+          <div class="news-title">'징역 4년' 유정범 대표에 투자한 VC, <br>어떻게 봐야 할까</div>
+          <div class="news-contents">'부릉 창업자 유정범 대표 1심서 징역 4년' 최근, 배달대행 유니콘 '부릉'을 키운 유정범 전 메쉬코리아 대표가 1심에서 징역 4년을 선고받았다는
+            언론 보도...</div>
+        </div>
+
+        <div>
+          <img class="article--news" src="./../img/article--news04.PNG">
+          <div class="news-title">동기부여는 짧다</div>
+          <div class="news-contents">*이 글은 외부 필자인 최철용님의 기고입니다. 오늘까지 70.84km를 뛰었어요. 이번 달에 '100km 돌파'라는 목표를 드디어 달성할 수
+            있을까요? 아직 2주...</div>
+        </div>
       </article>
+
       <article class="article--container01">
-        <a href="">
+        <div class="news--container">
           <img class="article--news" src="./../img/article--news01.PNG">
-          <img class="article--news" src="./../img/article--news01.PNG">
-          <img class="article--news" src="./../img/article--news01.PNG">
-          <img class="article--news" src="./../img/article--news01.PNG">
-        </a>
+          <div class="news-title">막 오른 천하제일 AI대회, 키워드는 오픈소스-프롬스크래치</div>
+          <div class="news-contents">한국 제일 AI 선발대회, 'WBL(World Best LLM)' 프로젝트가 공식적으로 시작됐습니다. 한국을 대표하는 AI 기업 대부분이 도전장을
+            냈습니다...</div>
+        </div>
+
+        <div class="news--container">
+          <img class="article--news" src="./../img/article--news02.PNG">
+          <div class="news-title">“벤처 생태계, 고속도로는 깔아놨는데 진출로는 없는 상황”..김학균 VC협회장 인터뷰</div>
+          <div class="news-contents">"지금 우리나라 벤처 생태계를 비유를 들어 설명하자면 고속도로를 쫙 깔아놨는데 진입로는 많이 만들어놨지만 진출로는 없는 상황과 같아요"...</div>
+        </div>
+
+        <div class="news--container">
+          <img class="article--news" src="./../img/article--news03.PNG">
+          <div class="news-title">'징역 4년' 유정범 대표에 투자한 VC, 어떻게 봐야 할까</div>
+          <div class="news-contents">'부릉 창업자 유정범 대표 1심서 징역 4년' 최근, 배달대행 유니콘 '부릉'을 키운 유정범 전 메쉬코리아 대표가 1심에서 징역 4년을 선고받았다는언론 보도...</div>
+        </div>
+
+        <div class="news--container">
+          <img class="article--news" src="./../img/article--news04.PNG">
+          <div class="news-title">동기부여는 짧다</div>
+          <div class="news-contents">*이 글은 외부 필자인 최철용님의 기고입니다. 오늘까지 70.84km를 뛰었어요. 이번 달에 '100km 돌파'라는 목표를 드디어 달성할 수 있을까요? 아직 2주...</div>
+        </div>
       </article>
-      <article class="article--container01">
-        <a href="">
-          <img class="article--news" src="./../img/article--news01.PNG">
-          <img class="article--news" src="./../img/article--news01.PNG">
-          <img class="article--news" src="./../img/article--news01.PNG">
-          <img class="article--news" src="./../img/article--news01.PNG">
-        </a>
-      </article>
-      <article class="article--container01">
-        <a href="">
-          <img class="article--news" src="./../img/article--news01.PNG">
-          <img class="article--news" src="./../img/article--news01.PNG">
-          <img class="article--news" src="./../img/article--news01.PNG">
-          <img class="article--news" src="./../img/article--news01.PNG">
-        </a>
-      </article>
-      <article class="article--container01">
-        <a href="">
-          <img class="article--news" src="./../img/article--news01.PNG">
-          <img class="article--news" src="./../img/article--news01.PNG">
-          <img class="article--news" src="./../img/article--news01.PNG">
-          <img class="article--news" src="./../img/article--news01.PNG">
-        </a>
-      </article>
+
     </div>
   </main>
   <footer>
