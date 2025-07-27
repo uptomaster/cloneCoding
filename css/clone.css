@@ -9,6 +9,7 @@
     Helvetica Neue, Segoe UI, Apple SD Gothic Neo,
     Noto Sans KR, Malgun Gothic, Apple Color Emoji,
     Segoe UI Emoji, Segoe UI Symbol, sans-serif;
+
 }
 
 header {
@@ -155,6 +156,10 @@ main {
   padding: 0px 20px;
 }
 
+.main--menu-login {
+  padding: 0px 0px 30px 0px;
+}
+
 .main--menu nav {
   position: fixed;
   top: 10%;
@@ -183,7 +188,7 @@ nav ul {
 
 nav ul li {
   padding: 16px 40px 0px 10px;
-  width: 150px;
+  width: 250px;
 }
 
 /* nav태그 - ul태그 - 리스트 밑줄 없애기 */
@@ -196,7 +201,8 @@ nav ul li a {
   top: 20%;
   font-weight: bold;
   padding: 0 0 0 20px;
-  margin: 0 20px 0 0px;
+  margin: 0 20px 15px 5px;
+  font-size: 17px;
 }
 
 main {
@@ -206,21 +212,69 @@ main {
   max-width: 100%;
 }
 
+/* 사이드바 컨테이너 */
 .side--bar-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 200px;
   height: 100vh;
-  padding: 50px 40px 0px 0px;
+  padding: 50px 40px 30px 0px;
   border-right: 1px solid #535a5f;
   overflow-y: auto;
   background-color: white;
 }
 
-.side--bar-container nav{
+/* 사이드바 */
+.side--bar-container nav {
   padding: 20px;
-  gap:10px;
+}
+
+.mode img {
+  width: 22px;
+  height: 22px;
+  bottom: 10%;
+  left: 20%;
+  position: absolute;
+}
+
+/* 로고 컨테이너 */
+.logo-total-container {
+  padding: 30px 0px 0px 40px;
+  width: 219px;
+  height: 66px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.logo-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.logo-container1 img {
+  padding: 2px;
+  display: inline-block;
+}
+
+.logo-container2 img {
+  padding: 2px;
+  display: inline-block;
+}
+
+/* 왼쪽 8개 로고들 태그 넣기 */
+.side--bar-logo {
+  width: 24px;
+  height: 24px;
+  border: none;
 }
 
 .main--section-container {
@@ -255,7 +309,7 @@ main {
   margin: auto;
   text-decoration: none;
   font-size: 20px;
-  width:1780px;
+  width: 1780px;
 }
 
 
@@ -343,6 +397,8 @@ main {
   align-items: center;
   justify-content: space-around;
   padding: 2%;
+  margin:10px;
+  box-shadow: #666666;
 }
 
 .news-title {
@@ -374,14 +430,6 @@ main {
 .article--container01 img {
   width: 376.25px;
   height: 196.39px;
-  text-align: left;
-}
-
-.ariticle--container01 div {
-  margin: auto;
-  /* padding: 30px; */
-  margin: 0px 20px;
-  align-items: left;
   text-align: left;
 }
 
@@ -436,6 +484,11 @@ main {
   margin-top: 2px;
 }
 
+.article-each-container{
+  border-bottom: 10px solid #0c0c0cce;
+  margin:10px;
+}
+
 /* //////////////////////////////////////////////////////////// */
 /* footer 영역 */
 /* //////////////////////////////////////////////////////////// */
@@ -464,11 +517,20 @@ nav ul :hover {
   text-decoration: underline;
 }
 
-.info--banner02:hover{
+.info--banner02:hover {
   text-decoration: underline;
 }
 
-.main--info-image-center:hover{
+.main--info-image-center:hover {
   transform: scale(1.05);
   transition: transform 0.5s ease;
+}
+
+.article--container01>div>img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+.header--login-box:hover {
+  text-decoration: underline;
 }
