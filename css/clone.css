@@ -51,14 +51,14 @@ header {
   align-items: right;
   text-decoration: none;
   color: #535F5F;
-  padding: 0px 0px 0px 30px;
+  padding: 0px 0px 0px 10px;
   font-size: 14px;
   text-wrap: nowrap;
 }
 
 /* 헤더 전체를 묶은 컨테이너 */
 .header--container {
-  width: 100%;
+  /* width: 100%; */
   box-shadow: 0px 1px 7px rgba(24, 0, 0, 0.226);
 }
 
@@ -269,7 +269,7 @@ nav ul li a {
 /* 헤더 바로 아래 영역 */
 .main--info-container {
   text-align: center;
-  width: 1500px;
+  width: 100%;
   justify-content: space-around;
   text-wrap: nowrap;
 }
@@ -290,14 +290,14 @@ nav ul li a {
   margin: auto;
   text-decoration: none;
   font-size: 20px;
-  width: 1780px;
+  width: 1500px;
 }
 
 /* 광고 배너 밑에 사진 세 개 먼저 보여주기 */
 .main--info-image-container {
   display: flex;
   gap: 20px;
-  width: 1580px;
+  width: 1000px;
   height: 313px;
   padding: 0px 180px;
   align-items: center;
@@ -472,7 +472,7 @@ nav ul li a {
   font-size: 11.2px;
   text-align: center;
   line-height: 1.8;
-  left: 120px;
+  /* left: 120px; */
   position: relative;
 }
 
@@ -501,11 +501,12 @@ nav ul li a {
 
 /* hover 효과 영역 */
 
-nav ul :hover {
+nav ul li:hover {
   transform: translateX(10px);
   transition: transform 0.5s ease;
   text-decoration: underline;
 }
+
 
 .info--banner02:hover {
   text-decoration: underline;
@@ -552,3 +553,10 @@ nav ul :hover {
 .author--name:hover {
   text-decoration: underline;
 }
+
+/* 드롭박스 */
+.dropbox{
+  display:flex;
+  flex-direction: row;
+}
+
