@@ -12,85 +12,66 @@
 
 }
 
+/* /////////////////////////////////////// */
+/* 헤더 영역 */
+/* /////////////////////////////////////// */
+
+/* header */
 header {
-  /* height:200px; */
   display: flex;
   text-align: center;
   align-items: center;
   width: 1905px;
-  /* height:50px; */
 }
 
-main {
-  width: 2000px;
-}
-
-.header--title-box {
-  font-weight: bold;
-}
-
-.header--text-box a {
-  color: black;
-  text-decoration: none;
-}
+/* 화면 상단 회원가입,로그인 컨테이너 */
 
 .header--login-container {
   align-items: right;
   padding: 0px 0px 0px 400px;
+  display: flex;
+  margin: auto;
+  text-decoration: none;
 }
 
+/* 헤더 로그인 태그 */
 .header--login-box a {
   text-align: right;
   align-items: right;
   text-decoration: none;
-  display: inline-block;
   color: #535F5F;
   padding: 0px 1px 0px 0px;
   font-size: 14px;
+  text-wrap: nowrap;
 }
 
+/* 헤더 회원가입 태그 */
 .header--login-box2 a {
   text-align: right;
   align-items: right;
   text-decoration: none;
-  display: inline-block;
   color: #535F5F;
   padding: 0px 0px 0px 30px;
   font-size: 14px;
+  text-wrap: nowrap;
 }
 
-.header--title-box {
-  background-color: black;
-  border: 1px solid black;
-}
-
-.footer-container {
-  color: gray;
-  text-align: center;
-}
-
-.header--login-container {
-  display: flex;
-  margin: auto;
-  text-decoration: none;
-}
-
+/* 헤더 전체를 묶은 컨테이너 */
 .header--container {
-  /* text-align: right; */
-  /* margin:auto; */
   width: 100%;
   box-shadow: 0px 1px 7px rgba(24, 0, 0, 0.226);
 }
 
+/* 확성기+a태그 있는 영역 */
 .header--info-box {
-  background-color: #f5f5f5;
   margin: auto;
   display: flex;
-  width: 550px;
-  height: 20px;
+  width: 520px;
+  height: 30px;
   align-items: left;
   padding: 0px 100px 0px 30px;
 }
+
 
 .header--info-box img {
   width: 30px;
@@ -99,43 +80,44 @@ main {
   margin: auto;
 }
 
-.header--info-box p {
+.header--info-box a {
+  list-style: none;
+  text-decoration: none;
   flex: 1;
-  /* align-items: left; */
   margin: auto;
   font-size: 14px;
   color: #535F5F;
-  font-style: Pretendard;
+  font-style: "Pretendard Variable";
+  background-color: #f5f5f5;
+  text-wrap: nowrap;
 }
 
 .header--search-box {
-  width: 380px;
-  height: 30px;
+  width: 350px;
+  height: 28px;
   position: relative;
   display: flex;
   margin: 10px 10px;
-  border: 2px solid black;
-  border-radius: 5%;
+  border: 0.5px solid #66666660;
+  border-radius: 6%;
   align-items: left;
 }
 
 .header--search-box input {
-  /* margin: auto; */
   width: 100%;
-  /* height: 20px; */
   height: 100%;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 60px;
   border: none;
   outline: none;
-  text-align: left;
-  text-wrap: unset;
+  text-wrap: nowrap;
 }
 
 .header--search-box i {
   position: absolute;
-  top: 7px;
-  align-items: left;
+  top: 3px;
+  left: 5px;
+  /* align-items: left; */
 }
 
 .header--search-icon img {
@@ -144,26 +126,12 @@ main {
   /* padding: 0px 0px 15px 5px; */
 }
 
-#header--search-icon {
-  background-color: aquamarine;
-}
 
 .header--left-container {
   display: flex;
-  /* flex:1; */
   text-align: left;
   justify-content: space-between;
   padding: 0px 20px;
-}
-
-.main--menu-login {
-  padding: 0px 0px 30px 0px;
-}
-
-.main--menu nav {
-  position: fixed;
-  top: 10%;
-  z-index: 10;
 }
 
 /* 헤더: 상단 고정 */
@@ -174,8 +142,20 @@ main {
   right: 0;
   height: 55px;
   background-color: white;
-  z-index: 1001;
+  z-index: 11;
   border-bottom: 1px solid #ddd;
+}
+
+/* 메인 영역 */
+
+.main--menu-login {
+  padding: 0px 0px 30px 0px;
+}
+
+.main--menu nav {
+  position: fixed;
+  top: 10%;
+  z-index: 10;
 }
 
 /* 리스트 간격 띄우기 작업 & 점 없애기 */
@@ -205,13 +185,6 @@ nav ul li a {
   font-size: 17px;
 }
 
-main {
-  display: flex;
-  /* height: 2000px; */
-  max-height: 100%;
-  max-width: 100%;
-}
-
 /* 사이드바 컨테이너 */
 .side--bar-container {
   position: fixed;
@@ -221,7 +194,6 @@ main {
   height: 100vh;
   padding: 50px 40px 30px 0px;
   border-right: 1px solid #535a5f;
-  overflow-y: auto;
   background-color: white;
 }
 
@@ -230,11 +202,12 @@ main {
   padding: 20px;
 }
 
+/* 다크모드 이미지 */
 .mode img {
-  width: 22px;
-  height: 22px;
-  bottom: 10%;
-  left: 20%;
+  width: 17.47px;
+  height: 20.5px;
+  bottom: 9.7%;
+  left: 22.5%;
   position: absolute;
 }
 
@@ -246,27 +219,37 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  bottom: 20px;
 }
 
+/* 8개의 로고들 중 윗줄 컨테이너 */
 .logo-container1 {
   display: flex;
   flex-wrap: wrap;
   gap: 3px;
 }
 
+/* 8개의 로고들 중 아랫줄 컨테이너 */
 .logo-container2 {
   display: flex;
   flex-wrap: wrap;
   gap: 3px;
 }
 
+/* 이미지가 인라인이어서 텍스트로 취급되는 문제
+인라인블록으로 만들어서 문제해결 */
 .logo-container1 img {
-  padding: 2px;
   display: inline-block;
 }
 
+.side--bar-logo-hover img {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+
+/* 얘도 마찬가지 */
 .logo-container2 img {
-  padding: 2px;
   display: inline-block;
 }
 
@@ -278,31 +261,29 @@ main {
 }
 
 .main--section-container {
-  /* flex:1; */
-  /* padding: 0px 0px 0px 5px; */
   margin-left: 220px;
-  /* 사이드바보다 약간 더 넓게 */
+  /* 사이드바보다 약간 더 넓게 만듬(약간여백) */
   padding: 20px
 }
 
 /* 헤더 바로 아래 영역 */
 .main--info-container {
-  /* flex:1; */
   text-align: center;
   width: 1500px;
-  /* padding: 0 35px 20px 10px; */
   justify-content: space-around;
+  text-wrap: nowrap;
 }
 
+/* 광고 배너 */
 .main--info-title img {
   height: 91.66px;
   flex: 1;
   width: 1665px;
   padding-bottom: 3%;
-  /* margin: 50px -250px; */
-  padding: 37px 0px 30px 0px;
+  padding: 37px 0px 5px 0px;
 }
 
+/* 사진 밑에 뉴스 영역 */
 .main--info-banner {
   display: flex;
   padding: 10px 0px 0px 40px;
@@ -312,39 +293,32 @@ main {
   width: 1780px;
 }
 
-
+/* 광고 배너 밑에 사진 세 개 먼저 보여주기 */
 .main--info-image-container {
   display: flex;
-  /* justify-content: space-between; */
   gap: 20px;
-  /* width: 100%; */
   width: 1580px;
-  /* height: 100%; */
   height: 313px;
-  padding: 0px 140px;
+  padding: 0px 180px;
   align-items: center;
 }
 
-
-.main--info-image img {
-  /* width: 100%;
-  /* height: auto; */
-  /* max-width: 100%; */
-}
-
+/* 오른쪽, 왼쪽 사진 */
 .main--info-image img {
   width: 405px;
   height: 212.85px;
   padding: 0px;
+  filter: brightness(40%);
 }
 
+/* 가운데 사진 */
 .main--info-image-center img {
   width: 450px;
   height: 236.5px;
-  box-shadow: 0px 1px 7px rgba(24, 0, 0, 0.87);
+  box-shadow: 0px 0px 37px rgba(0, 0, 0, 0.750);
 }
 
-
+/* '뉴스'라고 표시되는 부분 */
 .info--banner01 {
   background-color: #1f8CE6;
   color: white;
@@ -358,6 +332,7 @@ main {
   padding: 5px 0px 0px 0px;
 }
 
+/* 뉴스 영역 옆에 표시되는 글 */
 .info--banner02 {
   background-color: #f5f5f5;
   color: black;
@@ -373,6 +348,7 @@ main {
   text-decoration: none;
 }
 
+/* 그 글이 링크되는 부분 a태그 */
 .info--banner02 a {
   text-decoration: none;
   color: #666666;
@@ -382,12 +358,10 @@ main {
 /* article 기사 영역 */
 /* //////////////////////////////////////////////////////////// */
 
-
-
+/* 기사 사진부분 */
 .article--news {
   width: 400px;
   height: 300px;
-  text-align: left;
 }
 
 .article--container01 {
@@ -397,17 +371,18 @@ main {
   align-items: center;
   justify-content: space-around;
   padding: 2%;
-  margin:10px;
+  margin: 10px;
   box-shadow: #666666;
 }
 
+/* 기사 큰제목 영역 */
 .news-title {
   padding: 5px 0px;
   font-size: 20px;
   text-decoration: none;
   font-style: "Pretendard Variable";
   /* background-color: blue; */
-  color: #333333;
+  /* color: #333333; */
   font-weight: bold;
   text-align: left;
   width: 376.25px;
@@ -416,10 +391,11 @@ main {
   /* margin-left: 0; */
 }
 
+/* 기사 내용 영역 */
 .news-contents {
   font-size: 13px;
   text-align: left;
-  padding: 12px;
+  padding: 5px 5px 15px 5px;
   flex: 1;
   width: 376.25px;
   height: 58px;
@@ -433,17 +409,15 @@ main {
   text-align: left;
 }
 
-.news--container {
-  text-align: left;
-  /* padding-left: 20px; */
-}
 
+/* 기사 사진 밑에 들어갈 영역들 */
 .author {
   display: flex;
   align-items: flex-start;
   gap: 8px;
 }
 
+/* 기자 사진 */
 .author img {
   width: 24px;
   height: 24px;
@@ -484,15 +458,27 @@ main {
   margin-top: 2px;
 }
 
-.article-each-container{
-  border-bottom: 10px solid #0c0c0cce;
-  margin:10px;
+.article-each-container {
+  margin: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+  padding: 0px 0px 30px 0px;
 }
 
 /* //////////////////////////////////////////////////////////// */
 /* footer 영역 */
 /* //////////////////////////////////////////////////////////// */
+.footer-container p {
+  color: #666666;
+  font-size: 11.2px;
+  text-align: center;
+  line-height: 1.8;
+  left: 120px;
+  position: relative;
+}
 
+.footer--number-box a {
+  font-size: 16px;
+}
 
 .footer--number-box {
   font-size: 18px;
@@ -504,15 +490,19 @@ main {
   padding: 2% 0% 5% 0%;
 }
 
-.footer-container {
-  border: 1px solid black;
+.aboutus{
+  font-size:11.2px;
+}
+
+.footer--info-box a{
+  color:#666666;
+  font-weight: bold;
 }
 
 /* hover 효과 영역 */
 
 nav ul :hover {
   transform: translateX(10px);
-  /*50px 오른쪽으로 이동 */
   transition: transform 0.5s ease;
   text-decoration: underline;
 }
@@ -521,16 +511,44 @@ nav ul :hover {
   text-decoration: underline;
 }
 
+/* 가운데 이미지만 확대기능주기 */
 .main--info-image-center:hover {
   transform: scale(1.05);
   transition: transform 0.5s ease;
 }
 
+/* 기사 사진에 포인터 갖다대면 확대 */
 .article--container01>div>img:hover {
   transform: scale(1.05);
   transition: transform 0.5s ease;
 }
 
-.header--login-box:hover {
+/* 회원가입, 로그인 헤더영역에 밑줄 효과 생성*/
+.header--login-box>a:hover {
+  text-decoration: underline;
+}
+
+.header--login-box2>a:hover {
+  text-decoration: underline;
+}
+
+/* 확성기 옆 문구 밑줄 효과 생성 */
+.header--info-box>a:hover {
+  text-decoration: underline;
+}
+
+.logo-container1 img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+/* 로고 영역 누르면 텍스트상자 보이게 */
+.side--bar-logo-hover img:hover {
+  display: block;
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+.author--name:hover {
   text-decoration: underline;
 }
